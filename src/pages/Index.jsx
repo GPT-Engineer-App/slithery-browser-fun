@@ -16,7 +16,7 @@ const Index = () => {
   const createGrid = () => {
     let elements = [];
     for (let i = 0; i < gridCount; i++) {
-      elements.push(<Box key={i} w="20px" h="20px" bg={snake.includes(i) ? "green.500" : i === apple ? "red.500" : "gray.200"} border="1px" borderColor="gray.100" />);
+      elements.push(<Box key={i} w="20px" h="20px" bg={snake.includes(i) ? "green.500" : i === apple ? "red.500" : "gray.200"} border="1px" borderColor="gray.100" borderRadius="5px" boxShadow="2px 2px 6px rgba(0,0,0,0.2)" />);
     }
     return elements;
   };
